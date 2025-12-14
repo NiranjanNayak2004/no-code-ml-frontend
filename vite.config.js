@@ -3,5 +3,8 @@ import react from "@vitejs/plugin-react"
 
 export default defineConfig({
   plugins: [react()],
-  base: "/",   // 👈 IMPORTANT
+  base: "/",        // 🔥 REQUIRED FOR NETLIFY
+  build: {
+    outDir: "dist", // 🔥 REQUIRED
+  },
 })
