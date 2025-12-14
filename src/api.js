@@ -1,5 +1,7 @@
 import axios from "axios"
 
-export default axios.create({
-  baseURL: "https://no-code-ml-backend.onrender.com"
+const API = axios.create({
+  baseURL: "https://no-code-ml-backend.onrender.com",
 })
+
+export default API
